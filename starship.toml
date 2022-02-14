@@ -1,0 +1,35 @@
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+[directory]
+truncation_length = 4
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = " "
+style = "bold dimmed green"
+
+[time]
+disabled = false
+format = '[ 🕙 $time ]($style) '
+time_format = "%I:%M:%S %p"
+utc_time_offset = "+6"
+style = "bold bg:#8a15e2"
