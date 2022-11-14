@@ -17,3 +17,6 @@ alias cstar='code $ZDOTDIR/starship.toml'
 RPROMPT="" # disable zsh right prompt
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$ZDOTDIR/starship.toml
+# dotnet
+export DOTNET_ROOT=$HOME/dotnet7
+export PATH=$PATH:$HOME/dotnet7
