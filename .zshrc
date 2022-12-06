@@ -17,6 +17,10 @@ alias cstar='code $ZDOTDIR/starship.toml'
 RPROMPT="" # disable zsh right prompt
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$ZDOTDIR/starship.toml
+alias vim='nvim'
+alias open-portainer='xdg-open https://localhost:9443/'
 # dotnet
+export BUN_INSTALL="$HOME/.bun"
+  export PATH="$BUN_INSTALL/bin:$PATH"
 export DOTNET_ROOT=$HOME/dotnet7
 export PATH=$PATH:$HOME/dotnet7
